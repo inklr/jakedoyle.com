@@ -14,41 +14,46 @@
  *= require_self
  */
 
- $primary-text-color: #000;
- $font: 'EB Garamond', serif;
- $font2: 'Bubbler One', sans-serif;
- $font3: 'Bungee', cursive;
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- body {
-     padding-top: 50px;
-     color: $primary-text-color;
- }
+/* universal */
 
- p {
-     font-family: $font;
-     font-weight: 300;
-     font-size: 1.5em;
- }
+$primary-text-color: #000;
+$font: 'EB Garamond', serif;
+$font2: 'Bubbler One', sans-serif;
+$font3: 'Bungee', cursive;
 
- h1, h2, h3, h4, h5, h6 {
-     font-family: $font3;
- }
+body {
+    padding-top: 50px;
+    color: $primary-text-color;
+}
 
- p > a, p > a:hover, {
-     text-decoration: none;
-     border-bottom: 1px solid $primary-text-color;
-     color: $primary-text-color;
- }
+p {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 1.5em;
+}
 
- footer li > a, footer li > a:hover {
-     text-decoration: none;
-     color: $primary-text-color;
- }
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font3;
+}
 
- .nav-container, footer {
-     background-color: #eee;
- }
+p > a, p > a:hover, {
+    text-decoration: none;
+    border-bottom: 1px solid $primary-text-color;
+    color: $primary-text-color;
+}
 
- nav {
-     font-family: $font;
- }
+footer li > a, footer li > a:hover {
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+.nav-container, footer {
+    background-color: #eee;
+}
+
+nav {
+    font-family: $font;
+}
