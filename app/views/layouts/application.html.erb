@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <%= csrf_meta_tags %>
+  <head>
+    <%= csrf_meta_tags %>
 
-        <!--<title>Jake Doyle - Web Developer</title>-->
-        <title><%= full_title(yield(:title)) %></title>
+    <!--<title>Jake Doyle - Web Developer</title>-->
+    <title><%= full_title(yield(:title)) %></title>
 
-        <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
-        <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Bungee|EB+Garamond" rel="stylesheet">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Bungee|EB+Garamond" rel="stylesheet">
 
-        <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
-    </head>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+  </head>
 
-    <body>
-        <%= render 'layouts/header' %>
-        <%= yield %>
-        <%= render 'layouts/footer' %>
+  <body>
+    <%= render 'layouts/header' %>
+    <div id="wrap">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

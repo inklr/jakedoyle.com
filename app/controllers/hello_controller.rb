@@ -1,18 +1,18 @@
 class HelloController < ApplicationController
-    def index
-    end
+  def index
+  end
 
-    #TODO
-    #def bio
-    #end
+  #TODO
+  #def bio
+  #end
 
-    #TODO
-    #def blog
-    #end
+  #TODO
+  #def blog
+  #end
 
-    def resume
-    end
+  def resume
+  end
 
-    def contact
-    end
+  def contact
+  end
 end
