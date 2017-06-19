@@ -1,3 +1,71 @@
 <% provide(:title, 'Resume') %>
-<h1>Hello#resume</h1>
-<p>Find me in app/views/hello/resume.html.erb</p>
+
+<main role="main">
+  <article>
+
+    <section id="bio">
+      <header>
+        <h2>
+          Jake Doyle
+          <small>Full-Stack Web Developer</small>
+        </h2>
+      </header>
+      <address>
+        Dallas, Texas, USA
+      </address>
+      <%= mail_to "hey@jakedoyle.com", subject: "Resume" %>
+    </section>
+
+    <section id="objective">
+      <header>
+        <h3>Objective</h3>
+      </header>
+      <p>
+        Highly talented and passionate software developer with a breadth of knowledge and skills.
+        Appreciates the art of designing a system, as well as the science of implementing a design correctly.
+        A dedicated worker with a genuine love of programming, he consistently exceeds expectations and outperforms peers.
+      </p>
+    </section>
+
+    <section id="experience">
+      <header>
+        <h3>Experience</h3>
+      </header>
+      <ul>
+        <li>
+          <section>
+            <header>Baron &amp; Budd P. C.</header>
+          </section>
+        </li>
+        <li>
+          <section>
+            <header>KPMG LLP</header>
+          </section>
+        </li>
+        <li>
+          <section>
+            <header>L-3 Communications</header>
+          </section>
+        </li>
+        <li>
+          <section>
+            <header>Texas A&amp;M University</header>
+          </section>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <header>
+        <h3>Education</h3>
+      </header>
+      <h4>Texas A&amp;M University</h4>
+    </section>
+
+    <section id="skills">
+      <header>
+        <h3>Skills</h3>
+      </header>
+    </section>
+  </article>
+</main>
