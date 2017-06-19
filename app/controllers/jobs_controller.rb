@@ -67,7 +67,7 @@ class JobsController < ApplicationController
       @job = Job.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Never trust parameters from the internet, only allow the white list through.
     def job_params
       params.require(:job).permit(:company, :start_date, :end_date, :current_job)
     end

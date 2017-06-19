@@ -2,11 +2,13 @@ class HelloController < ApplicationController
     def index
     end
 
-    def bio
-    end
-    
-    def blog
-    end
+    #TODO
+    #def bio
+    #end
+
+    #TODO
+    #def blog
+    #end
 
     def resume
     end

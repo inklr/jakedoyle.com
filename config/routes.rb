@@ -3,8 +3,9 @@
 Rails.application.routes.draw do
   root 'hello#index'
 
-  get '/bio', to: 'hello#bio'
-  get '/blog', to: 'hello#blog'
+  #TODO
+  #get '/bio', to: 'hello#bio'
+  #get '/blog', to: 'hello#blog'
   get '/resume', to: 'hello#resume'
   get '/contact', to: 'hello#contact'
 
