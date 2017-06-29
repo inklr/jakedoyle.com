@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   #get '/bio', to: 'hello#bio'
   #get '/blog', to: 'hello#blog'
   get '/resume', to: 'hello#resume'
-  get '/contact', to: 'hello#contact'
+  get '/contact', to: 'messages#new'
+  post '/contact', to: 'messages#new'
 
-  resources :jobs
+  #TODO
+  #resources :jobs
+
+  resources :messages
 end

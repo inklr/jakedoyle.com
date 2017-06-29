@@ -12,7 +12,4 @@ class HelloController < ApplicationController
 
   def resume
   end
-
-  def contact
-  end
 end

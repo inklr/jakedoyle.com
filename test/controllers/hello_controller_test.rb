@@ -29,12 +29,6 @@ class HelloControllerTest < ActionDispatch::IntegrationTest
   test "should get resume" do
     get resume_path
     assert_response :success
-    assert_select "title", "Resume | #{@base_title}"
-  end
-
-  test "should get contact" do
-    get contact_path
-    assert_response :success
-    assert_select "title", "Contact | #{@base_title}"
+    assert_select "title", "#{@base_title} | Resume"
   end
 end

@@ -2,23 +2,16 @@
 
 <main role="main">
   <article>
-
     <section id="bio">
       <header>
         <h2>
           Jake Doyle
           <small>Full-Stack Web Developer</small>
         </h2>
-      </header>
-      <address>
-        Dallas, Texas, USA
-      </address>
-      <%= mail_to "hey@jakedoyle.com", subject: "Resume" %>
-    </section>
-
-    <section id="objective">
-      <header>
-        <h3>Objective</h3>
+        <address>
+          Dallas, Texas
+        </address>
+        <%= mail_to "hey@jakedoyle.com", "hey@jakedoyle.com", subject: "Resume" %>
       </header>
       <p>
         Highly talented and passionate software developer with a breadth of knowledge and skills.
@@ -33,23 +26,70 @@
       </header>
       <ul>
         <li>
-          <section>
-            <header>Baron &amp; Budd P. C.</header>
+          <section class="experience-section">
+            <header>
+              <h4>Baron &amp; Budd P. C.</h4>
+              <address>Dallas, TX</address>
+              <div class="title">Intermediate Developer</div>
+              <div class="timeframe">May 2017 - Present</div>
+            </header>
+            <div class="experience-details">
+              <ul>
+                <li>Developed case management web applications using MVC Core architecure.</li>
+              </ul>
+            </div>
           </section>
         </li>
         <li>
-          <section>
-            <header>KPMG LLP</header>
+          <section class="experience-section">
+            <header>
+              <h4>KPMG LLP</h4>
+              <address>Dallas, Texas</address>
+              <div class="title">Associate Developer II</div>
+              <div class="timeframe">April 2015 - May 2017</div>
+            </header>
+            <div class="experience-details">
+              <ul>
+                <li>Designed and supervised the development of major technical applications and features.</li>
+                <li>Developed tax applications in C# using .NET MVC 4 architecture.</li>
+                <li>Developed and optimized SQL to support application performance.</li>
+                <li>Implemented robust client-side features and interfaces using JavaScript and Kendo UI.</li>
+                <li>Managed projects and tasks using SCRUM and TFS.</li>
+              </ul>
+            </div>
           </section>
         </li>
         <li>
-          <section>
-            <header>L-3 Communications</header>
+          <section class="experience-section">
+            <header>
+              <h4>L-3 Communications</h4>
+              <address>Greenville, Texas</address>
+              <div class="title">Software Engineer</div>
+              <div class="timeframe">July 2013 - April 2015</div>
+            </header>
+            <div class="experience-details">
+              <ul>
+                <li>Led a small team of engineers in daily programming tasks.</li>
+                <li>Developed internal web applications in C# and SQL using .NET Web Forms architecture and SQL Server.</li>
+                <li>Pioneered the use of advanced client-side development techniques and MVC architecture.</li>
+              </ul>
+            </div>
           </section>
         </li>
         <li>
-          <section>
-            <header>Texas A&amp;M University</header>
+          <section class="experience-section">
+            <header>
+              <h4>Texas A&amp;M University</h4>
+              <address>College Station, Texas</address>
+              <div class="title">Technician</div>
+              <div class="timeframe">September 2010 - May 2013</div>
+            </header>
+            <div class="experience-details">
+              <ul>
+                <li>Troubleshooted hardware, operating system, and office application problems for faculty and staff.</li>
+                <li>Conducted routine maintenance of workstations and computer labs.</li>
+              </ul>
+            </div>
           </section>
         </li>
       </ul>
@@ -59,13 +99,90 @@
       <header>
         <h3>Education</h3>
       </header>
-      <h4>Texas A&amp;M University</h4>
+      <ul>
+        <li>
+          <section class="education-section">
+            <header>
+              <h4>Texas A&amp;M University</h4>
+              <address>College Station, Texas</address>
+              <div class="degree">B.S. Computer Science</div>
+              <div class="timeframe">September 2010 - May 2013</div>
+            </header>
+            <div class="education-details">
+              <ul>
+                <li>GPA 3.2 / Major GPA 3.5</li>
+                <li>Minors in Mathematics and Psychology.</li>
+                <li>Led capstone project and implemented using C# and WPF.</li>
+                <li>Participated in a semester of undergraduate research with the Sketch Recognition Lab.</li>
+              </ul>
+            </div>
+          </section>
+        </li>
+      </ul>
     </section>
 
     <section id="skills">
       <header>
         <h3>Skills</h3>
       </header>
+      <ul>
+        <li>
+          <section class="skills-section">
+            <header>
+              <h4>Backend Development</h4>
+            </header>
+            <ul>
+              <li>C/C++/C#</li>
+              <li>SQL</li>
+              <li>Ruby</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <section class="skills-section">
+            <header>
+              <h4>Frontend Development</h4>
+            </header>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>.NET MVC 4+/.NET Core</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+              <li>Kendo UI</li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <section class="skills-section">
+            <header>
+              <h4>Tools</h4>
+            </header>
+            <ul>
+              <li>Visual Studio/Atom</li>
+              <li>SQL Server Management Studio</li>
+              <li>IIS</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <section class="skills-section">
+            <header>
+              <h4>Misc.</h4>
+            </header>
+            <ul>
+              <li>Entity Framework</li>
+              <li>LINQ</li>
+              <li>Git</li>
+              <li>TFS</li>
+              <li>Powershell Scripting</li>
+              <li>BASH Scripting</li>
+            </ul>
+          </section>
+        </li>
+      </ul>
     </section>
   </article>
 </main>

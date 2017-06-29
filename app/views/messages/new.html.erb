@@ -1,0 +1,62 @@
+<% provide(:title, 'Contact') %>
+
+<main role="main">
+  <article>
+    <h2>Send Me a Message!</h2>
+
+    <%= form_for @message, :url => { :action => :new } do |f| %>
+      <% if @message.errors.any? %>
+        <div id="error_explanation">
+          <h3>
+            <%= pluralize(@message.errors.count, "error") %> prohibited this article from being saved:
+          </h3>
+          <ul>
+            <% @message.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <p>
+        <%= f.label :first_name %>
+        <br />
+        <%= f.text_field :first_name %>
+      </p>
+
+      <p>
+        <%= f.label :last_name %>
+        <br />
+        <%= f.text_field :last_name %>
+      </p>
+
+      <p>
+        <%= f.label :company_name %>
+        <br />
+        <%= f.text_field :company_name %>
+      </p>
+
+      <p>
+        <%= f.label :email_address %>
+        <br />
+        <%= f.email_field :email_address %>
+      </p>
+
+      <p>
+        <%= f.label :phone_number %>
+        <br />
+        <%= f.telephone_field :phone_number %>
+      </p>
+
+      <p>
+        <%= f.label :message %>
+        <br />
+        <%= f.text_area :message %>
+      </p>
+
+      <p>
+        <%= f.submit "Send Message" %>
+      </p>
+    <% end %>
+  </article>
+</main>
