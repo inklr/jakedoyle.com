@@ -20,17 +20,19 @@
 /* universal */
 
 $primary-text-color: #000;
-$font: 'EB Garamond', serif;
+$font1: 'EB Garamond', serif;
 $font2: 'Bubbler One', sans-serif;
 $font3: 'Bungee', cursive;
+$font4: 'Quicksand', sans-serif;
 
 body {
   padding-top: 50px;
   color: $primary-text-color;
+  font-family: $font4;
 }
 
 p {
-  font-family: $font;
+  font-family: $font4;
   font-weight: 300;
   font-size: 1.5em;
 }
@@ -55,5 +57,5 @@ footer li > a, footer li > a:hover {
 }
 
 nav {
-  font-family: $font;
+  font-family: $font1;
 }

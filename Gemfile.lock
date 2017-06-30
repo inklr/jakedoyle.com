@@ -66,6 +66,8 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     concurrent-ruby (1.0.5)
+    d3-rails (3.5.17)
+      railties (>= 3.1)
     erubi (1.6.0)
     execjs (2.7.0)
     ffi (1.9.18-x86-mingw32)
@@ -179,6 +181,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   coffee-script-source (= 1.8.0)
+  d3-rails (~> 3.5, >= 3.5.16)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.2)
   puma (~> 3.7)

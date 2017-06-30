@@ -32,7 +32,14 @@ class MessagesController < ApplicationController
       if params[:message].nil?  || params[:message].empty?
         false
       else
-        params.require(:message).permit(:first_name, :last_name, :email_address, :company_name, :phone_number, :message)
+        params.require(:message).permit(
+          :name,
+          :email_address,
+          :company_name,
+          :message,
+          :budget,
+          :website,
+          :project_date)
       end
     end
 end

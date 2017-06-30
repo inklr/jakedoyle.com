@@ -4,7 +4,13 @@
   <article>
     <h2>Send Me a Message!</h2>
 
-    <%= form_for @message, :url => { :action => :new } do |f| %>
+    <p>
+      If you're interested in working together or just want to say &ldquo;Hi&rdquo;, fill out the form below and I will get back to you as soon as I can.
+    </p>
+
+    <%= form_for @message, :url => { :action => :new }, :class => "col-lg-6" do |f| %>
+
+      <!-- form validation -->
       <% if @message.errors.any? %>
         <div id="error_explanation">
           <h3>
@@ -18,45 +24,54 @@
         </div>
       <% end %>
 
-      <p>
-        <%= f.label :first_name %>
-        <br />
-        <%= f.text_field :first_name %>
-      </p>
+      <div class="container-fluid">
+        <div class="form-group col-lg-6">
+          <%= f.label :name, class: "required" %>
+          <br />
+          <%= f.text_field :name, required: true, class: "form-control" %>
+        </div>
 
-      <p>
-        <%= f.label :last_name %>
-        <br />
-        <%= f.text_field :last_name %>
-      </p>
+        <div class="form-group col-lg-6">
+          <%= f.label :email_address, "Email Address", class: "required" %>
+          <br />
+          <%= f.email_field :email_address, required: true, class: "form-control" %>
+        </div>
 
-      <p>
-        <%= f.label :company_name %>
-        <br />
-        <%= f.text_field :company_name %>
-      </p>
+        <div class="form-group col-lg-6">
+          <%= f.label :company_name, "Company Name" %>
+          <br />
+          <%= f.text_field :company_name, class: "form-control" %>
+        </div>
 
-      <p>
-        <%= f.label :email_address %>
-        <br />
-        <%= f.email_field :email_address %>
-      </p>
+        <div class="form-group col-lg-6">
+          <%= f.label :website %>
+          <br />
+          <%= f.text_field :website, class: "form-control" %>
+        </div>
 
-      <p>
-        <%= f.label :phone_number %>
-        <br />
-        <%= f.telephone_field :phone_number %>
-      </p>
+        <div class="form-group col-lg-6">
+          <%= f.label :budget, "Budget" %>
+          <br />
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <%= f.number_field :budget, min: 0, step: 50, class: "form-control" %>
+          </div>
+        </div>
 
-      <p>
-        <%= f.label :message %>
-        <br />
-        <%= f.text_area :message %>
-      </p>
+        <div class="form-group col-lg-6">
+          <%= f.label :project_date, "Project Date" %>
+          <br />
+          <%= f.date_field :website, class: "form-control" %>
+        </div>
 
-      <p>
-        <%= f.submit "Send Message" %>
-      </p>
+        <div class="form-group col-lg-12">
+          <%= f.label :message, class: "required" %>
+          <br />
+          <%= f.text_area :message, rows: 6, required: true, class: "form-control" %>
+        </div>
+
+        <%= f.submit "Send Message", class: "btn btn-primary" %>
+      </div>
     <% end %>
   </article>
 </main>
